@@ -1,3 +1,18 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                   Command for the first page 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand*\FirstPage{
+\thispagestyle{empty}
+% placing a pdf as background and adding text on top
+\includepdf[pages=1,picturecommand*={ 
+                % selecting placement, font size and text type
+                \put(130,630){\fontsize{28}{28}\selectfont{\textsc{\textbf{Spicy Title}}}}
+                \put(130,200){\fontsize{28}{28}\selectfont{\Large{\textbf{Teknisk rapportmal}}}}
+                \put(130,180){\fontsize{28}{28}\selectfont{\Large{\textbf{NTNU studenter}}}}
+                \put(130,160){\fontsize{28}{28}\selectfont{\Large{\textbf{Trondheim, vår 2020}}}}
+                }]{images/ntnu_front_page.pdf}}
+
 %This is the Titlepage
 %%=========================================
 \thispagestyle{empty}
@@ -6,8 +21,8 @@
 \begin{center}
 \Huge{Resilience to Sea Level Extremes in Trondheim}\\[2pc]
 
-\Large{Your Name}\\[1pc]
-\large{December 2012}\\[2pc]
+\Large{Amy Anne McCormack}\\[1pc]
+\large{Novermber 2022}\\[2pc]
 
 PROJECT THESIS\\
 Department of Geography\\
