@@ -1,20 +1,18 @@
+%document preamble 
 \documentclass{article}
 \usepackage{graphicx}
 \usepackage{array}
 \graphicspath{ {figures/} }
-
-\renewcommand{\listfigurename}{List of plots}
-\renewcommand{\listtablename}{Tables}
-
 \begin{document}
 %This is the Preface
 %%=========================================
 
 %attempting to insert signature as picture
-\addcontentsline{toc}{section}{Summary and Conclusions}
-\section*{Summary and Conclusions}
+\addcontentsline{toc}{section}{Preface}{Unnumbered Section}
+\section{Preface}
 
-\addcontentsline{toc}{section}{Preface}
+
+%\addcontentsline{toc}{section}{Preface}
 \title{Preface}
 This is a Master's thesis completed as part of the study program Natural Resources Management MSc at NTNU in the deparment of Geography. It was carried out in 2022 with data collection occurring during the summer. The idea for the project occured to the researcher during a kayaking expedition in Lofoten where she came across many individuals with direct memory and experience of sea level change and extreme sea levels. \\[2cm]
 
@@ -29,21 +27,23 @@ Amy Anne McCormack
 
 \graphicspath{ {./images/} }
 \includegraphics[scale=0.5]{fig/to use signature png}
+\newpage
 
 %% insert table of contents
 \tableofcontents
 
-\addcontentsline{toc}{methods}{Unnumbered Section}
-\section*{Unnumbered Section}
+%rename figure list and table list 
+\renewcommand{\listfigurename}{List of Figures}
+\renewcommand{\listtablename}{List of Tables}
 
 %insert figure list
-
 %insert table list
-
 \listoffigures
 \listoftables
 \clearpage
 \pagenumbering{arabic}
+
+
 
 word words words
 
