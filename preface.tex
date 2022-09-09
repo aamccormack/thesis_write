@@ -1,16 +1,15 @@
 \documentclass{article}
 \usepackage{graphicx}
+\usepackage{array}
+\graphicspath{ {figures/} }
+
+\renewcommand{\listfigurename}{List of plots}
+\renewcommand{\listtablename}{Tables}
+
 \begin{document}
 %This is the Preface
 %%=========================================
 
-
-LIST OF FIGURES
-
-LIST OF TABLES
-
-
-%%=========================================
 %attempting to insert signature as picture
 \addcontentsline{toc}{section}{Summary and Conclusions}
 \section*{Summary and Conclusions}
@@ -30,4 +29,20 @@ Amy Anne McCormack
 
 \graphicspath{ {./images/} }
 \includegraphics[scale=0.5]{fig/to use signature png}
+
+%% insert table of contents
+\tableofcontents
+
+%insert figure list
+
+%insert table list
+
+\listoffigures
+\listoftables
+\clearpage
+\pagenumbering{arabic}
+
+word words words
+
+
 \end{document}
