@@ -8,17 +8,24 @@
 \usepackage{amsmath}
 \usepackage{booktabs}
 \usepackage{url}
-\usepackage{biblatex}
+%attempting to chang from bibtex to biblatex referencing system so can use apa
+%\usepackage{biblatex}
+%new one makes it 
+\usepackage[english]{babel}
 %\usepackage[numbers]{natbib} % Use this command if you want to refer to the literature by numbers, e.g., [1]
-\addbibresource{thesis_ref.bib}
 \usepackage{setspace}
 \linespread{1.5}
 
 %bibiliography style apa is not automatically available for biblatex
 %need to add it 
-%\bibliographystyle{apa}
+\bibliographystyle{apalike}
 %\addcontentsline{toc}{chapter}{\bibname}
-\bibliography{references}
+\bibliography{ref-bib-tex}
+
+%Sets the bibliography style to apalike UNSRT and imports the 
+%bibliography file "references.bib".
+%\bibliographystyle{apalike}
+%\bibliography{references}
 
 \newenvironment{remark}{\par\mbox{}\par\noindent{\bfseries \emph{Remark}\/}:\normalfont}{\par}
 \newenvironment{defin}{\par\mbox{}\par\noindent\bfseries \emph{\Pointinghand\ }\normalfont}{\par}
