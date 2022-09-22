@@ -51,6 +51,8 @@ Table \ref{table:summary_stats}
 \label{table:summary_stats}
 \end{table}
 \end{center}
+
+
 \begin{center}
 \begin{table}[!ht]
     \centering
@@ -173,8 +175,9 @@ During this both the variables of "interest-level" and "info-sum-climate" appear
        Interest Level & 0.89332 & 4.343e-09 & Skewed \\ \hline
          Info Climate Sum  & 0.95721 & 0.0001159 & Skewed \\ \hline
         Flood Impact & 0.87779 & 6.681e-10 & Skewed \\ \hline
-        
-    \end{tabular}
+     \end{tabular}
+    \caption{Shapiro Test Results}
+    \label{table:shapiro_test_results}
 \end{table}
 
 \section{Kruskal Wallis Test Results}
@@ -198,6 +201,8 @@ Kruskal Wallis Rank Sum Test was conducted using R, specifically the package bas
         interest\_level & 0.16920 & 6.43150 & 4 \\ \hline
         worry\_climate & 0.05630 & 9.19960 & 4 \\ \hline
     \end{tabular}
+    \caption{Kruskal Wallis Test Results General Variables}
+    \label{Kruskal_wallis_test_general}
 \end{table}
 com resident p value is below 0.05 hence dependent
 worry climate p value is 0.05, so not necessarily relevant but very close, but h-value is particularly large hence may be dependent anyway
@@ -233,6 +238,8 @@ As the P-value for the variable community membership -residence is greater than 
         info\_climate\_sci & 0.88040 & 0.02650 & 1 & 0.12390 & 2.36760 & 1 \\ \hline
         info\_climate\_edu & 0.64850 & 0.20779 & 1 & 0.02438 & 5.06770 & 1 \\ \hline
     \end{tabular}
+    \caption{Kruskal Wallis Test Results Variables on Information Access}
+    \label{Kruskal_wallis_test_information}
 \end{table}
 
 
