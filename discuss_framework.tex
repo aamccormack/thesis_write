@@ -1,6 +1,65 @@
 % DISCUSSION  related to the reproducibility of this technique
 \chapter{Discussion of Framework for Determing Resilience}
 
+\section{Software Consideration}
+
+The ease of providing data was a key design factor considered when designing the data collection method for this project. The goal was to create an online survey which could be done by the majority of participants in under 5 minutes, without missing out on potentially valuable data. This required a balancing act of maximising potential data gathered from a single participant against maximising number of participants. To do this several iterations were created and trialled.
+\paragraph{}
+Due to ease of later analysis, ease of repeatability, accessibility,  avoidance of disease spread and other major benefits an online survey method was chosen. The major downside of this technique is that it could exclude certain sectors of society due to lack of access to the internet. However, in Norway over 99 percent of the population have access to the internet (ssb https://www.ssb.no/en/statbank/table/11000/tableViewLayout1/ ) *MAYBE GO INTO MORE DETAIL HERE, E.G. SMARTPHONE ACCESS*
+\paragraph{}
+Once online surveys were the chosen method then which software was most appropriate needed to be considered. To do so many softwares were explored and then basic surveys were created and then tested on desktops, laptops, tablets, IOS smartphones and Android Smartphones on the perceived best candidates. The results of this exploration are outlined on table** below.
+
+\begin{table}[!ht]
+    \centering
+    \begin{tabular}{|l|l|l|l|l|}
+    \hline
+        software & nettskjema & Google forms & Arcgis survey 123 & Survey Monkey \\ \hline
+        ~ & ~ & ~ & ~ & ~ \\ \hline
+        Degree of security & high & high & medium & Medium \\ \hline
+        Degree of privacy & high & medium & medium & Medium \\ \hline
+        Link strength & High & medium & low & low \\ \hline
+        Range of question formats & medium & medium & low & high \\ \hline
+        Ease of use & medium & high & medium & high \\ \hline
+        Gathers GIS data & no & no & yes & no \\ \hline
+        Can upload pictures & no & yes & no & yes \\ \hline
+        Can include several images in survey & yes & yes & no & yes \\ \hline
+        Number of Surveys allowed & Unlimited & unlimited & Unlimited & limited \\ \hline
+        Number of questions allowed & unlimited & unlimited & Unlimited – but over 10 questions proved unreliable & Limited \\ \hline
+        Download responses as Excel or CSV & yes & yes & yes & yes \\ \hline
+        downsides & New to researcher, Norway Universities specific & Requires google account for participants to log in & Slow to load on mobiles & Limited services on free subscription \\ \hline
+    \end{tabular}
+    \caption{Software Considerations}
+    \label{table: software-considerations}
+\end{table}
+
+After this ArcGIS survey 123 was the chosen method of collection. The plan being the participants could draw upon an uploaded map where they believed the high-tide, current storm surge, past storm surge and future storm surges would be. This was believed to be the best technique as it was felt it would influence the participants answers least and allow for interesting GIS analysis later. 
+\paragraph{}
+However, difficulties arouse due to ArcGIS survey 123 struggling with more than one map being used in a single survey and difficulties of inputting this information on a smartphone. For this reason, a pilot survey was created in both ArcGIS survey 123 and Nettskjema. While ArcGIS survey 123 allowed for input of GIS data, Nettskjema does not. So, to compare survey methods maps of one of the selected areas were to allow for similar data input as can be seen in the sections below. 
+
+\section{Lessons Learned from Pilot Survey}
+14 participants completed the pilot survey. These participants were selected due to their high level of knowledge about changing sea levels with the majority being Natural Resource Management Students (ooh and 1 postdoc) at NTNU and the rest being members of Trondheim Kayak Klubb with an interest in sea levels and climate change. Nine out of 14 respondents selected level of concern about climate change as maximum with the rest picking the next highest level. All but two participants said they got their information from education or personal research with two respondents saying they got it from the researcher. 
+\paragraph{}
+%graph or table here
+\begin{table}[!ht]
+    \centering
+    \begin{tabular}{|l|l|l|l|}
+    \hline
+        Question & Which image displays Brattøra's  & Which image displays Brattøra's & Which image displays   \\ \newline
+         & 20-year storm surge now? &  20-year storm surge in 2090? & Brattøra's high tide? \\ \hline
+        a & 3 & 1 & 4 \\ \hline
+        b & 7 & 3 & 2 \\ \hline
+        c & 3 & 6 & 4 \\ \hline
+        d & 1 & 4 & 4 \\ \hline
+        Correct Answer & B & B & C \\ \hline
+    \end{tabular}
+    \caption{Pilot Survey Results}
+    \label{table: pilot-survey}
+\end{table}
+
+As could be inferred there appears to be no major agreement in results for the pilot survey participants. This could be due to lack of awareness, unlike what was expected but to check a focus group was run. 
+
+\section{Lessons Learned from Focus Group}
+
 \section{Demographics}
 The purpose of this research is to assist in the creation of a framework to determine resilience of a place, specifically to sea level extremes. This is to allow repeated measurements of resilience to determine whether a place is making improvements in its resilience. How resilience is improved is done through many techniques including......
 
