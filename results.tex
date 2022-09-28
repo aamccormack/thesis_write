@@ -19,7 +19,7 @@ Find below table ** which details the summary statistics for the responses to th
 
 
 \begin{center}
-\begin{table}[!ht]
+\begin{table}[h]
     \centering
     \begin{tabular}{|l|l|l|l|l|l|l|}
     \hline
@@ -160,7 +160,7 @@ questions asked Where do you get information about this place? Where do you get 
         risk\_i\_tide & 0.37 & 0.48 & 0 & 1 & 1 & 0.55  \\ \hline
         risk\_i\_storm\_total & 2.14 & 1.51 & 0 & 5 & 5 & 0.33 \\ \hline
           \end{tabular}
-    \caption{Summary Statistics Percieved Risks}
+    \caption{Summary Statistics Perceived Risks}
 \label{table:summary_stats_percieved_risks}
 \end{table}
 \end{center}
@@ -170,13 +170,38 @@ From the following what are the major risks to people in this area?
 
 As can be seen in table* above the data is not normally distributed. This was confirmed by creating histograms for each value, searching for a normally distributed value which was independent to be the basis for analysis. 
 
+\section{Histograms}
+Awareness of changing sea levels is considered as the most important factor of local knowledge for resilience to sea level extremes. Five questions were asked which could make up the variable of awareness. These variables are ss-now, ss-future, ss-tide, slr-past, slr-future and the questions they are based off are outlined in table 5.2 - Variable link to Survey Question. As can be seen in table 5.1 - Summary Statistics these variables are individually very skewed. The original plan had been to combine all these answers to determine awareness. This variable is referred to as ss-aware-all and is in the 3rd graph in figure 5.1 Histogram Potential Awareness Variables. The other graphs show other attempts at creating a normally distributed variable which could be used in basic linear modelling to determine which factors influence awareness.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{fig_results/Awareness.png}
+    \caption{Histogram Potential Awareness Variables}
+    \label{fig:aware}
+\end{figure}
+
+Graph top left in the figure above displays the histogram for ss-aware variable which combined ss-now, ss-future and ss-tide. This was chosen as the most appropriate variable due to the fact that only awareness questions with a simulated water level picture were included, as can be seen in the appendix. While ss-aware-all is very skewed and the inclusion of two questions which are based purely off numeric answers is likely the reason for this. When given just numeric responses the accurate rate was non significant. For example only 3 subjects out of 153 gave the correct answer for slr-past, which is very unlikely given that it was multiple choice with only 7 potential answers (if split evenly then would have 21 subjects choosing this response. While slr-future had more correct responses, this was only mildly significant which combined the lack of correct answers for slr-past was seen as a good reason to exclude the answers to both of these questions for creating the variable of awareness. 
+
+Graph top right displays the histogram for ss-aware-2 which only includes ss-now and ss-tide, excluding ss-future. This was considered as a potential baseline variable for current awareness to sea level extremes, however the variable summary statistics were incredibly simlar to ss-aware.
+
+Graph bottom right displays the histogram for ss-event. This was expected to be a very skewed variable. Value 0 is the most common and displays the number of subjects with no memory of sea level extremes in Trondheim. Each other number indicates the number of sea level extreme events (water level higher than 2m) the subject remembered occurring between 1950 and summer 2022. For the full list of potential events please consults the relevant question in the appendix. This is included in this graph to show for how few subjects memory of a sea level extreme impacted their awareness. The lack of memory is very interesting considering that length of knowledge for the majority included two sea level extreme events. The histogram for long-know is the second graph in figure 5.2 Histogram Potential Factors below.
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{fig_results/large_factors_all_histogram.png}
+    \caption{Histogram Potential Factors}
+    \label{fig:factors}
+\end{figure}
+words words word
+As can be seen from this graph as well as all the awareness variable potentials being skewed so are the majority of the potential factors. The least skewed were long-know, interest-level and info-climate-sum. These factors then were tested using Shapiro test to determine whether they were as normally distributed as they seemed. 
 \newpage
 
 \section{Shapiro Test Results}
 
 During histogram analysis both the variables of "interest-level" and "info-sum-climate" appeared normally distributed. To investigate whether these variables were normally distributed or just appeared roughly to be a Shapiro test was carried out using**(royston 1982) . Due to inexperience with this method it was first checked on variables which from the histograms were clearly not normalised. From these tests and **(royston 1982) an assumption of alpha value of 0.05 was determined meaningful. This means if the p-value created during this test is below 0.05 then the null hypothesis is rejected. This does leave a 5 percent chance of error. The results from the Shapiro test can be seen in table* below and this determines that none of the variables were normally distributed. 
 
-\begin{table}[!ht]
+\begin{table}[h]
     \centering
     \begin{tabular}{|l|l|l|l|}
     \hline
