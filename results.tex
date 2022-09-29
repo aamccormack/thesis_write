@@ -186,6 +186,9 @@ Graph top right displays the histogram for ss-aware-2 which only includes ss-now
 
 Graph bottom right displays the histogram for ss-event. This was expected to be a very skewed variable. Value 0 is the most common and displays the number of subjects with no memory of sea level extremes in Trondheim. Each other number indicates the number of sea level extreme events (water level higher than 2m) the subject remembered occurring between 1950 and summer 2022. For the full list of potential events please consults the relevant question in the appendix. This is included in this graph to show for how few subjects memory of a sea level extreme impacted their awareness. The lack of memory is very interesting considering that length of knowledge for the majority included two sea level extreme events. The histogram for long-know is the second graph in figure 5.2 Histogram Potential Factors below.
 
+THIS ALSO ANSWERS RESEARCH Q 2
+SUBJECTS ARE SOMEWHAT AWARE BUT NOT VERY
+
 
 \begin{figure}[h]
     \centering
@@ -276,4 +279,17 @@ As the P-value for the variable community membership -residence is greater than 
     \label{Kruskal_wallis_test_information}
 \end{table}
 
+Kruskal wallis test indicate that com-mem-resident is a factor for ss-aware, it could be a random factor, which would mean a more appropriate method than basic linear modelling is linear mixed effect modelling. Linear mixed effect modelling should consider com-resident as a random factor for ss-aware and for ss-aware-2, then infor-climate-edu and info-climate-newspaper may be random factors.
 
+Info-climate-sum and com-mem included factors which influence the chosen baseline variable, but do not in and of themselves appear dependent from the kruskal wallis test. However it does highlight that these factors may be important considerations and are worth trialling with linear mixed effect modeeling.
+
+\section{Linear Mixed Effect Modelling}
+I am really struggiling to interpret the statistics from this. 
+I have models running and have plotted them. 
+
+Further more I am not sure how necessary this is - is kruskal wallis method enough. I am trying to find the easiest way to determine resilience.
+
+Or am i over complicating this and the basic linear models that i made make sense, but the end result is the factors dont seem to impact awareness.....
+But from what i have read kruskal wallis displays data is dependent and standard linear modelling requires independent variables. 
+
+%https://www.youtube.com/watch?v=QCqF-2E86r0
