@@ -110,6 +110,13 @@ This chapter includes the summary statistics of the results gained from the surv
 
 \section{Pilot Survey}
 
+\begin{figure}
+    \centering
+    \includegraphics{fig_results/pilot-survey-results.png}[h]
+    \caption{Pilot Survey Results}
+    \label{fig:my_label}
+\end{figure}
+
 \section{Focus Group}
 
 \section{Summary Statistics }
@@ -269,6 +276,15 @@ From the following what are the major risks to people in this area?
 
 As can be seen in table* above the data is not normally distributed. This was confirmed by creating histograms for each value, searching for a normally distributed value which was independent to be the basis for analysis. 
 
+\section{Access to Survey}[h]
+\begin{figure}
+    \centering
+    \includegraphics{fig_results/access_survey.png}
+    \caption{Access to Survey}
+    \label{fig:access_survey}
+\end{figure}
+
+
 \section{Histograms}
 Awareness of changing sea levels is considered as the most important factor of local knowledge for resilience to sea level extremes. Five questions were asked which could make up the variable of awareness. These variables are ss-now, ss-future, ss-tide, slr-past, slr-future and the questions they are based off are outlined in table 5.2 - Variable link to Survey Question. As can be seen in table 5.1 - Summary Statistics these variables are individually very skewed. The original plan had been to combine all these answers to determine awareness. This variable is referred to as ss-aware-all and is in the 3rd graph in figure 5.1 Histogram Potential Awareness Variables. The other graphs show other attempts at creating a normally distributed variable which could be used in basic linear modelling to determine which factors influence awareness.
 
@@ -365,14 +381,14 @@ As the P-value for the variable community membership -residence is greater than 
         info\_place\_kommune & 0.82590 & 0.04839 & 1 & 0.12790 & 0.57600 & 1 \\ \hline
         info\_climate\_sum & 0.91220 & 3.32660 & 8 & 0.45218 & 8.12040 & 8 \\ \hline
         info\_climate\_po & 0.11750 & 2.45020 & 1 & 0.24550 & 1.34870 & 1 \\ \hline
-        info\_climate\_family & 0.00481 & 0.94470 & 1 & 0.56970 & 0.32313 & 1 \\ \hline
+        info\_climate\_family & \cellcolor[HTML]{7df9ff} 0.00481 & 0.94470 & 1 & 0.56970 & 0.32313 & 1 \\ \hline
         info\_climate\_friend & 0.82460 & 0.04910 & 1 & 0.63010 & 0.23186 & 1 \\ \hline
-        info\_climate\_newspaper & 0.09036 & 2.86790 & 1 & 0.01218 & 6.24830 & 1 \\ \hline
+        info\_climate\_newspaper & 0.09036 & 2.86790 & 1 & \cellcolor[HTML]{7df9ff} 0.01218 & 6.24830 & 1 \\ \hline
         info\_climate\_tv & 0.61230 & 0.25689 & 1 & 0.75000 & 0.10154 & 1 \\ \hline
         info\_climate\_so\_me & 0.74950 & 0.10960 & 1 & 0.92830 & 0.00809 & 1 \\ \hline
         info\_climate\_mem & 0.30270 & 1.06220 & 1 & 0.27500 & 1.91500 & 1 \\ \hline
         info\_climate\_sci & 0.88040 & 0.02650 & 1 & 0.12390 & 2.36760 & 1 \\ \hline
-        info\_climate\_edu & 0.64850 & 0.20779 & 1 & 0.02438 & 5.06770 & 1 \\ \hline
+        info\_climate\_edu & 0.64850 & 0.20779 & 1 & \cellcolor[HTML]{7df9ff} 0.02438 & 5.06770 & 1 \\ \hline
     \end{tabular}
     \caption{Kruskal Wallis Test Results Variables on Information Access}
     \label{Kruskal_wallis_test_information}
@@ -382,14 +398,7 @@ Kruskal wallis test indicate that com-mem-resident is a factor for ss-aware, it 
 
 Info-climate-sum and com-mem included factors which influence the chosen baseline variable, but do not in and of themselves appear dependent from the kruskal wallis test. However it does highlight that these factors may be important considerations and are worth trialling with linear mixed effect modeeling.
 
-\section{Linear Mixed Effect Modelling}
-I am really struggiling to interpret the statistics from this. 
-I have models running and have plotted them. 
 
-Further more I am not sure how necessary this is - is kruskal wallis method enough. I am trying to find the easiest way to determine resilience.
-
-Or am i over complicating this and the basic linear models that i made make sense, but the end result is the factors dont seem to impact awareness.....
-But from what i have read kruskal wallis displays data is dependent and standard linear modelling requires independent variables. 
 
 %https://www.youtube.com/watch?v=QCqF-2E86r0
 
