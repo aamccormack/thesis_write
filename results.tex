@@ -276,14 +276,21 @@ From the following what are the major risks to people in this area?
 
 As can be seen in table* above the data is not normally distributed. This was confirmed by creating histograms for each value, searching for a normally distributed value which was independent to be the basis for analysis. 
 
-\section{Access to Survey}[h]
-\begin{figure}
+\section{Awareness}
+
+\section{factors}
+
+\section{Access to Survey}
+words words
+\begin{figure}[h]
     \centering
     \includegraphics{fig_results/access_survey.png}
-    \caption{Access to Survey}
+    \caption{Access to Survey. The most common access method of the survey was poster, with 70 subjects selecting this choice. This is followed by social media which has 47 subjects choosing this. Only 25 subjects accessed the survey due to personal connection to researcher. Access via email, place of employment and organisation membership are all under 10. Subjects could chose more than one access type. For example a subject could have accessed via personal connection to researcher and social media, due to the researcher sharing this survey on her personal page.}
     \label{fig:access_survey}
 \end{figure}
 
+\section{Interest Level}
+that interest level doesnt factor with determined awareness is interesting, need it here so i can discuss in discussion 
 
 \section{Histograms}
 Awareness of changing sea levels is considered as the most important factor of local knowledge for resilience to sea level extremes. Five questions were asked which could make up the variable of awareness. These variables are ss-now, ss-future, ss-tide, slr-past, slr-future and the questions they are based off are outlined in table 5.2 - Variable link to Survey Question. As can be seen in table 5.1 - Summary Statistics these variables are individually very skewed. The original plan had been to combine all these answers to determine awareness. This variable is referred to as ss-aware-all and is in the 3rd graph in figure 5.1 Histogram Potential Awareness Variables. The other graphs show other attempts at creating a normally distributed variable which could be used in basic linear modelling to determine which factors influence awareness.
@@ -328,9 +335,11 @@ During histogram analysis both the variables of "interest-level" and "info-sum-c
          Info Climate Sum  & 0.95721 & 0.0001159 & Skewed \\ \hline
         Flood Impact & 0.87779 & 6.681e-10 & Skewed \\ \hline
      \end{tabular}
-    \caption{Shapiro Test Results}
+    \caption{Shapiro Test Results. The alpha value was assigned 0.05, meaning that if the p-value is below 0.05 then the null hypothesis that this factor is not normally distributed was rejected. This leaves a 5 percent chance of error. Each of these factors p-value is below 0.05 meaning that their distribution was deemed skewed.}
     \label{table:shapiro_test_results}
 \end{table}
+
+
 
 \section{Kruskal Wallis Test Results}
 Kruskal Wallis Rank Sum Test was conducted using R, specifically the package based off \cite{hollander_nonparametric_2014}. Kruskal Wallis Rank Sum Test was chosen due to the the distribution of the results and the potential interdependency of the data. Linear modelling was also considered and trialled, but this technique includes the skewed aspect of the data better, when looking for dependents. 
