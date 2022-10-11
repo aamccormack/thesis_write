@@ -354,7 +354,7 @@ As shown by the focus group there is issues with just requesting a numeric value
 \section{Factors Affecting Awareness}
 The results from the survey for both the variables and factors were very skewed as can be seen from the figures above. The analysis was first done on R and then exported to excel to utilise their templates for graphs. The results from the histogram analysis is that no variable of awareness appeared normally distributed. Upon basic transformation including logarithmic and cubing it was highly skewed. Further more almost all factors from the results were skewed as can be seen in the figures above.   
 
-\subsection{}section{Shapiro Test Results}
+\subsection{Shapiro Test Results}
 
 During histogram analysis only the factors of "interest-level" and "info-sum-climate" appeared normally distributed. To investigate whether these variables were truly normally distributed a Shapiro test was carried out using \cite{royston_extension_1982} . Due to inexperience with this method it was first checked on variables which from the histograms were clearly skewed. From these tests and \cite{royston_extension_1982} an assumption of alpha value of 0.05 was determined meaningful. This means if the p-value created during this test is below 0.05 then the null hypothesis is rejected. This does leave a 5 percent chance of error. The results from the Shapiro test can be seen in table* below and this determines that none of the variables were normally distributed. 
 
@@ -420,7 +420,7 @@ risk of concluding that a difference exists when there is no actual difference.
     \label{Kruskal_wallis_test_general}
 \end{table}
 
-An alpha value of 0.05 was chosen and the factor of community memebership - resident has a pvalue of 0.01524, hence is significant. Meaning the null hypothesis of no relationship was rejected and the positive hypothesis that residency is dependent on awareness was accepted. 
+An alpha value of 0.05 was chosen and the factor of community membership - resident has a P-value of 0.01524, hence is significant. Meaning the null hypothesis of no relationship was rejected and the positive hypothesis that residency is dependent on awareness was accepted. 
 
 
 
@@ -461,19 +461,18 @@ Kruskal wallis test indicate that com-mem-resident is a factor for ss-aware, it 
 
 Info-climate-sum and com-mem included factors which influence the chosen baseline variable, but do not in and of themselves appear dependent from the kruskal wallis test. However it does highlight that these factors may be important considerations and are worth trialling with linear mixed effect modeeling.
 
-\subsection{ Awareness and Place}
 
-\subsection{Awareness and Language}
 
-\subsection{Awareness and Community Membership}
+\section{Hypothesis Testing Summary}
+To summarise the results from the hypothesis testing it is put in the format of the original hypothesises shown in the introduction. 
+%could break it down into section is 
+%\subsection{ Awareness and Place}
+%\subsection{Awareness and Language}
+%\subsection{Awareness and Community Membership}
+%\subsection{Awareness and Level of Interest}
+%\subsection{Awareness and Information Access}
 
-\subsection{Awareness and Level of Interest}
-
-\subsection{Awareness and Information Access}
-
-\section{Hypothesis Testing}
-
-Hypothesis dependent on community membership
+\subsection{Hypothesis dependent on community membership}
 \begin{enumerate}
     \item We expect residents to be aware - accepted
     \item We expect commuters to be aware - rejected
@@ -484,7 +483,7 @@ Hypothesis dependent on community membership
     \end{enumerate}
 \paragraph{}
 
-Hypothesis dependent on local knowledge
+\subsection{Hypothesis dependent on local knowledge}
 \begin{enumerate}
     \item We expect subjects with professional interest in SLE's to be aware - not accepted
     \item We expect subjects with primary knowledge about places which are on reclaimed land to be aware
@@ -495,10 +494,12 @@ Hypothesis dependent on local knowledge
 \end{enumerate}
 \paragraph{}
 
-Hypothesis dependent on awareness of changing climate
+\subsection{Hypothesis dependent on awareness of changing climate}
 \begin{enumerate}
     \item We expect subjects with many information sources about climate change to be more aware - awareness does appear to have a dependency on where the subject got information about the climate from, however there is no observed link between more sources having a greater impact on awareness
     \item We expect subjects with the information source of formal education and/or peer reviewed publications to be aware - awareness does not have an observed dependency on subjects getting information from peer review publications. Awareness of the current sea level extremes, but not the future ones does appear to be dependent upon getting information about the climate from formal education.  
     \item We expect subjects who are more concerned about climate change to be aware - it is not particularly significant but we have found that awareness is not dependent upon climate change, but further research is needed on this result as it was borderline and could have been shifted in a slightly larger alpha value was chosen.
     \item We expect subjects who predict they will be impacted by flooding from SLE's to be more aware - hypothesis rejected
 \end{enumerate}
+
+Very few of the hypothesis were accepted. The reasons for this are expanded upon in the next section Discussion of Results
