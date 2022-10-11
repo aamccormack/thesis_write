@@ -95,7 +95,7 @@ maps - old version used table i think a map would be better
 
 \section{Social Systems}
 
-This chapter focuses on the results gained from the survey conducted to determine social resilience to sea level extremes in Trondheim. It also includes the results from Kruskal Wallis Rank Sum Tests and Shapiro Tests. Each of the results gained from the survey questions is displayed in a graph. These results will be discussed to determine Social Systems Resilience to Sea Level Extremes in the discussion. The tables and graphs below make reference to  the questions in the survey these results were gained from. For the full survey in either Norwegian or English please consult the appendix. Reference in text is only made to the English questions for ease of readability. 
+This chapter focuses on the results gained from the survey conducted to determine social resilience to sea level extremes in Trondheim.  It also includes the results from Kruskal Wallis Rank Sum Tests and Shapiro Tests. Each of the results gained from the survey questions is displayed in a graph. These results will be discussed to determine Social Systems Resilience to Sea Level Extremes in the discussion. The tables and graphs below make reference to  the questions in the survey these results were gained from. For the full survey in either Norwegian or English please consult the appendix. Reference in text is only made to the English questions for ease of readability. 
 
 
 
@@ -117,11 +117,11 @@ There were 153 subjects who conducted the survey. The survey was split into 8 su
 \end{table}
 \paragraph{}
 
-As can be seen in the table above the most popular place for responses was Nidelva. This is the most central of the locations and has  the greatest daily throughput of people. It also includes perhaps the most iconic views of Trondheim. Next popular was Grillstad, perhaps due to the recognition by residents that the area could be severly influenced by flooding from sea level extremes. Skansen and Brattøra are the next most responded to, both of these locations have significant commercial ventures. Brattøra in particular is dominated not by residency but by offices and industry. Perhaps the conduction of this survey in Summer decreased the number of responses due to the lack of office workers. 
+As can be seen in the table above the most popular place for responses was Nidelva. This is the most central of the locations and has  the greatest daily throughput of people. It also includes perhaps the most iconic views of Trondheim. Next popular was Grillstad, perhaps due to the recognition by residents that the area could be severely influenced by flooding from sea level extremes. Skansen and Brattøra are the next most responded to, both of these locations have significant commercial ventures. Brattøra in particular is dominated not by residency but by offices and industry. Perhaps the conduction of this survey in Summer decreased the number of responses due to the lack of office workers. 
 Almost evenly split for each location was whether the survey was completed in Norwegian or English. English surveys had 66 response, while the Norwegian survey had 87 responses.  
 
 \subsection{Interest Level in Sea Level Extremes}
-
+Awareness as a facet of local knowledge was the searched for variable within this project. An interesting comparison is level of interest against awareness. There is the assumption that high or professional interest in sea level extremes is associated with higher levels of awareness of the risk. 
 \begin{figure}[h]
     \centering
     \includegraphics{fig_results/interest-level.png}
@@ -130,6 +130,16 @@ Almost evenly split for each location was whether the survey was completed in No
 \end{figure}
 \paragraph{}
 words words words
+
+\begin{figure}[h]
+    \centering
+    \includegraphics{fig_results/aware_vs_interest.png}
+    \caption{Determined Awareness Against Interest Level}
+    \label{fig:aware_vs_interest}
+\end{figure}[]
+\paragraph{}
+
+There is no linearity between this determination of awareness and self determined interest level. This raised questions about the assumption of resilience due to the prescence of professionals within a community. However there is serious limitations on this result as there were no marine workers included in the surveys subjects.
 
 
 \subsection{Memory of Sea Level Extremes}
@@ -141,6 +151,7 @@ words words words
     \label{fig:my_label}
 \end{figure}
 \paragraph{}
+
 
 As can be seen in the figure above this is a very skewed factor. T Value 0 is the most common and displays the number of subjects with no memory of sea level extremes in Trondheim. Each other number indicates the number of sea level extreme events (water level higher than 2m) the subject remembered occurring between 1950 and summer 2022. For the full list of potential events please consults the relevant question in the appendix. Relatively few subjects remembered sea level extremes. The lack of memory is very interesting considering that length of knowledge for the majority included two sea level extreme events as can be seen in the figure below. 
 
@@ -361,10 +372,11 @@ During histogram analysis only the factors of "interest-level" and "info-sum-cli
 \end{table}
 \paragraph{}
 
-This result that all variables and factors were skewed including the important variable of awareness and interest level influenced the choice of how to analyse dependency. Mixed effect linear models were considered, but the purpose of this project was to find fast ways of analysing resilience and what social factors could be worked on to improve resilience. For this reason non-parametric tests was decided upon. Kruskal Wallis Rank Sum Tests were chosen due to the need to investigate multiple groups, upon one factor -awareness- and having only measured each subject once \cite{hollander_nonparametric_2014}. 
+This result that all variables and factors were skewed including the important variable of awareness and interest level influenced the choice of how to analyse dependency. Mixed effect linear models were considered, but the purpose of this project was to find fast ways of analysing resilience and what social factors could be worked on to improve resilience. For this reason non-parametric tests was decided upon. Kruskal Wallis Rank Sum Tests were chosen due to the need to investigate multiple groups, upon one factor -awareness- and having only measured each subject once. Both \cite{tasman_how_2014} and \cite{hollander_nonparametric_2014} were consulted to make this decision. 
 
 \subsection{Kruskal Wallis Rank Sum Test}
-Kruskal Wallis Rank Sum Test was conducted using R, specifically the package based off \cite{hollander_nonparametric_2014}. Kruskal Wallis Rank Sum Test was chosen due to the the distribution of the results and the potential inter-dependency of the data. Linear modelling was also considered and trialled, but this technique includes the skewed aspect of the data better, when looking for dependents. 
+Kruskal Wallis Rank Sum Test was conducted using R, specifically the package based off \cite{hollander_nonparametric_2014}. Kruskal Wallis Rank Sum Test was chosen due to the the distribution of the results and the potential inter-dependency of the data. Linear modelling was also considered and trialled, but this technique includes the skewed aspect of the data better, when looking for dependents. An alpha value of 0.05 was chosen before these test were carried out. This means there is a 5 percent chance of innacuracy when determining dependancy of factors against the variable of awareness.
+
 \begin{table}[h]
     \centering
     \begin{tabular}{|l|l|l|l|}
@@ -373,12 +385,18 @@ Kruskal Wallis Rank Sum Test was conducted using R, specifically the package bas
         Factor & p value & h value & df \\ \hline
            length of Knowledge & 0.73760 & 3.54770 & 6 \\ \hline
        Interest Level in SLE & 0.16920 & 6.43150 & 4 \\ \hline
-        Concern about Climate & 0.05630 & 9.19960 & 4 \\ \hline
+        Concern about Climate & \cellcolor[HTML]{7df9ff} 0.05630 & 9.19960 & 4 \\ \hline
     \end{tabular}
     \caption{Kruskal Wallis Test Results General Variables}
     \label{Kruskal_wallis_test_general}
 \end{table}
 
+In this case none of the factors were deemed significant as all the p-values were larger than the alpha value of 0.05. However the factor of Concern about climate change is 0.05630, which is very near. If the alpha value was chosen to be 0.01 as is used in some studies \cite{hollander_nonparametric_2014} then this would be enough to reject the null hypothesis that concern about awareness is not dependent upon concern about climate. This rejection is backed up by the h-value. Another way the null hypothesis could have been rejected is if
+
+worry climate p value is 0.05, so not necessarily relevant but very close, but h-value is particularly large hence may be dependent anyway
+
+alpha of 0.05 indicates a 5 percent
+risk of concluding that a difference exists when there is no actual difference.
 
 \begin{table}[h]
     \centering
@@ -396,14 +414,14 @@ Kruskal Wallis Rank Sum Test was conducted using R, specifically the package bas
         Commuter & 0.44610 & 0.58063 & 1 \\ \hline
         Other & 0.58620 & 0.29627 & 1 \\ \hline
     \end{tabular}
-    \caption{Kruskal Wallis Test Results Community Membership. Other community membership was self reporting the most common response was tourist, with sailor coming next}
+    \caption{Kruskal Wallis Test Results Community Membership. Other community membership was self reporting the most common response was tourist, with sailor coming next. Resident is the only value which is highlighted here as it was the only significant result when utilising a alhpa value of 0.05}
     \label{Kruskal_wallis_test_general}
 \end{table}
-com resident p value is below 0.05 hence dependent
-worry climate p value is 0.05, so not necessarily relevant but very close, but h-value is particularly large hence may be dependent anyway
 
-alpha of 0.05 indicates a 5 percent
-risk of concluding that a difference exists when there is no actual difference.
+An alpha value of 0.05 was chosen and the factor of community memebership - resident has a pvalue of 0.01524, hence is significant. Meaning the null hypothesis of no relationship was rejected and the positive hypothesis that residency is dependent on awareness was accepted. 
+
+
+
 
 As the P-value for the variable community membership -residence is greater than the alpha (could assign 0.05 as is common or assign 0.1 which would make it easier to include a few more variables for discussion) The differences between some of the medians are statistically significant.
 
