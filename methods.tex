@@ -37,9 +37,10 @@ The difficulty the participants had answering these questions is discussed in th
 
 \section{Simulated Sea Level Extremes}
 To determine Trondheim's social system a survey was carried out in the summer of 2022. A key purpose of this survey was to determine awareness of subjects. 
-Five questions were asked to aid the determination of this awareness and of these questions three included four pictures of simulated sea level extremes for each of the research sites. These were created based of models from \cite{noauthor_se_2021} \cite{noauthor_integrating-sea-level-rise-and-storm-surges--local-planningpdf_2017} and \cite{noauthor_stormflo_2021}. Maps were created for various potential sea level extremes at the chosen research sites. The photos of the sight were taken. These were taken to make editing later as easy as possible. To do this the photos were taken on a sunny day, minimising people and boats, while attempting to capture recognisable landmarks of each of the sites. The exact geolocation and timing of the photos was noted to allow for determination of the water height. Table below displays the height of each of the original photos. 
+Five questions were asked to aid the determination of this awareness and of these questions three included four pictures of simulated sea level extremes for each of the research sites. These were created based of models form \cite{dsb_integrating-sea-level-rise-and-storm-surges--local-planningpdf_2017} and \cite{kartverket_se_2020}. Maps were created for various potential sea level extremes at the chosen research sites. The photos of the sites were taken to make understanding and editing as easy as possible. To do this the photos were taken on a sunny day, minimising people and boats, while attempting to capture recognisable landmarks of each of the sites. The exact geo-location and timing of the photos was noted to allow for determination of the water height. Table 3.1 below displays the water height of each of the original photos. 
+\paragraph{}
 
-\begin{table}[h]
+\begin{table}[h!]
     \centering
     \begin{tabular}{|l|l|}
         \hline
@@ -52,11 +53,12 @@ Five questions were asked to aid the determination of this awareness and of thes
     \caption{Water levels on day of photo taken for simulated sea level extremes this was determined from \cite{tides_high_2022}. Water levels included consideration of tide plus weather effects plus river levels}
     \label{tab:water_level_photo}
 \end{table}
-
-Using \cite{tides_high_2022}the water level for each of the original pictures was determined. For Skansen, Grillstad and Brattøra this meant combing the tides, plus weather effects. Nidelva on certain days would also need to include the river level, the day chosen was one with a particualrly low river level, hence water level was dominated by the tide at the time of the photo taken.   
 \paragraph{}
 
-This determined water level was the base where each simulated water level could be added to. Table ** and ** below show the simulated sea level extremes and the associated water level with NN2000 as a reference point.  To be able to relatively accurately add the simulated water levels to the images the first step is to make sure that each of the photos included a reference height. These key features (bins, fences, permanent benches, windows), were measured using a tape measure to allow for simulated realignment of the sea to particular height. Perspective was an important consideration in the original photos. Having the coastline at an angle allowed for a more realistic image, but did complicate the photo editing. 
+Using \cite{tides_high_2022} the water level for each of the original pictures was determined. For Skansen, Grillstad and Brattøra this meant combing the tides, plus weather effects. On most days to calculate Nidelva research site's water level would need to include the river level. However, time and day chosen was one with a particularly low river level which allowed for this value to be excluded as water level was dominated by the tide at the time of the photo being taken.   
+\paragraph{}
+
+These determined water levels was the base where each simulated water level could be added to. Table 3.2 and 3.3 below show the sea level extremes and the associated water level with NN2000 as a reference point.  To be able to relatively accurately add the simulated water levels to the images the first step is to make sure that each of the photos included a reference height. These key features (bins, fences, permanent benches, windows), were measured using a tape measure to allow for simulated realignment of the water levels to particular heights. Perspective was an important consideration in the original photos. Having the coastline at an angle allowed for a more realistic image, but did complicate the photo editing. 
 
 \begin{table}[h]
     \centering
@@ -66,7 +68,7 @@ This determined water level was the base where each simulated water level could 
      Extreme &  water neeps & water springs &  storm surge  & storm surge  &  storm surge  \\ \hline
        Height (cm) &  55 & 119 & 216 & 234 & 244 \\ \hline
     \end{tabular}
-    \caption{2022 Sea Level Extremes Projections}
+    \caption{2022 Sea Level Extremes Projections \cite{kartverket_se_2020}}
     \label{2022_sle_projections}
 \end{table}
 
@@ -78,13 +80,16 @@ This determined water level was the base where each simulated water level could 
        Extreme & water springs &  storm surge  &  storm surge  &  storm surge  \\ \hline
        Height (cm) & 172 & 269 & 286 & 297 \\ \hline
     \end{tabular}
-    \caption{2090 Sea Level Extremes Projections}
+    \caption{2090 Sea Level Extremes Projections \cite{kartverket_se_2020}}
     \label{2090_sle_projections}
 \end{table}
 
-Once the heights were calculated from the tables above they were drawn onto the original images using inkscape. This new image was then used as the base layers when simulating the extreme sea levels. To do this the original image was replicated twice with a reduced opacity. The extra layer allowed for easier fixes during the next step. The top layer was then cut to leave only the water present in the image using the free select tool. If too much was cut the layer underneath could be used as a back up. Next the handle transformation tool was used on the new just water layer to define points. This new layer was then aligned for each of the draw upon water levels. Soft eraser tool was used to minimise oddities in the water created due to this movement. Dodge tool was used to darken below the water line to make the water line more distinct as calm bright days were chosen, meaning the edge of the water was difficult to pin point on small screens. Finally the clone tool was used to get ride of potential distractions including seagulls floating on the sea. Once satisfied the image was exported as a jpeg. 
+Once the heights were calculated from the tables above they were drawn onto the original images using inkscape. This new image was then used as the base layers when simulating the extreme sea levels. To do this the original image was replicated twice using GIMP, GNU Image Manipulation Program, with a reduced opacity. The extra layer allowed for easier fixes during the next step. 
+\paragraph{}
+Next the top layer was then cut to leave only the water present in the image using the free select tool. If too much was cut the layer underneath could be used as a back up. After this the handle transformation tool was used on this layer to define points. This layer was then aligned for each of the draw upon water levels. Soft eraser tool was used to minimise oddities in the water created due to this movement. Dodge tool was used to darken below the water line to make the water line more distinct as calm bright days were chosen, meaning the edge of the water was difficult to pin point on small screens. Finally the clone tool was used to get ride of potential distractions, including seagulls and boats floating on the sea. Once satisfied the image was exported as a JPEG. 
 
-
+\paragraph{}
+The final values and water levels used were rounded to 10cm due to ease of participants understanding and to not give a false sense of accuracy in the images. The exported jpegs were combined in order into grids and labelled for use in the survey. 
 
 
 
