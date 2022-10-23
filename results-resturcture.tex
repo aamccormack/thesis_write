@@ -431,61 +431,64 @@ During histogram analysis, only the factors of "interest-level" and "info-climat
 \end{table}
 \paragraph{}
 
-This result that all variables and factors were skewed, including the important variable of awareness and interest level, influenced the choice of how to analyse dependency. Mixed effect linear models were considered, but the purpose of this project was to find fast ways of analysing resilience and what social factors could be worked on to improve resilience. For this reason, non-parametric tests were selected. As outlined in the method (chapter 3) Kruskal Wallis Rank Sum Tests were chosen due to the need to investigate multiple groups, upon one factor and having only measured each subject once. Both \cite{tasman_how_2014} and \cite{hollander_nonparametric_2014} were consulted to make this decision. 
+This result that all variables and factors were skewed, including the important variable of awareness and interest level, influenced the choice of how to analyse dependency. As outlined in the method (chapter 3) Kruskal Wallis Rank Sum Tests were chosen due to the need to investigate multiple groups, upon one factor and having only measured each subject once.
 
 \subsection{Kruskal Wallis Rank Sum Test}
-Kruskal Wallis Rank Sum Test was conducted using RStudio, specifically the package based off \cite{hollander_nonparametric_2014}. Kruskal Wallis Rank Sum Test was chosen due to the the distribution of the results and the potential inter-dependency of the data. Linear modelling was also considered and trialled, but this technique includes the skewed aspect of the data better, when looking for dependents. An alpha value of 0.05 was chosen before these test were carried out. This means there is a 5 percent chance of error when determining dependency of factors against the variable of awareness.
+The results from Kruskal Wallis Rank Sum Test conducted using the RStudio package based off \cite{hollander_nonparametric_2014} are outlined below.  An alpha value of 0.05 was chosen before these tests were carried out. This means there is a 5 percent chance of error when determining dependency of factors against the variable of awareness.
+\paragraph{}
+For clarity the statistical labels for the Kruskal Wallis Rank Sum test is quickly outlined in this paragraph. For each of the results below the p-value is the probability that measures the evidence against the null hypothesis.  If the p-value is lower than the selected alpha-value (0.05) then the null hypothesis could be rejected. The alternative method that the null hypothesis could be rejected utilises the H-value, which is the test statistic. If the df is over four and the h-value is particularly high this can assist in the rejection of the hypothesis. Df stands for degrees of freedom, which is the number of groups within that factor, minus one. Statistical interpretation used guidance from \cite{minitab_interpret_2022}.
+\paragraph{}
 
-Table 5.6 shows that, for this determination of awareness, none of the factors were classed as dependent, when using the Kruskal Wallis rank sum test with an alpha value of 0.05.
+Table 5.6 shows that, for the determination of awareness considering all questions on awareness, none of the factors were classed as dependent, when using the Kruskal Wallis rank sum test with an alpha value of 0.05. 
 
 \begin{table}[H]
     \centering
     \begin{tabular}{|l|l|l|l|}
     \hline
-         ~ & \textbf{Awareness as predictor} & ~ & ~ \\ \hline
+         ~ & \textbf{Awareness All} & ~ & ~ \\ \hline
         Factor & p value & h value & df \\ \hline
            length of Knowledge & 0.73760 & 3.54770 & 6 \\ \hline
        Interest Level in SLE & 0.16920 & 6.43150 & 4 \\ \hline
-        Concern about Climate & \cellcolor[HTML]{7df9ff} 0.05630 & 9.19960 & 4 \\ \hline
+        Concern about Climate & \cellcolor[HTML]{7df9ff} 0.05630 & \cellcolor[HTML]{7df9ff} 9.19960 & \cellcolor[HTML]{7df9ff} 4 \\ \hline
         Language of Survey & 0.2041 & 1.6129 & 1 \\ \hline
         Place of Survey & & & \\ \hline
         Predicted Personal Impact of Flood & 0.7156 & 1.357 & 3 \\ \hline
     \end{tabular}
-    \caption{Kruskal Wallis Test Results General Variables}
+    \caption{Kruskal Wallis Test Results General Variables. Awareness All means that for this determination of awareness all five questions on awareness in the survey were included. Length of knowledge is how many years the subjects state they have knowledge of the places. Interest level in SLE represents the self-ranking of subjects from professional interest to no interest in SLEs. Concern about Climate is again a self ranking, but of how concerned subjects are about climate change, from one to five. Language of survey, is whether the subjects chose to respond in Norwegian or English. Place of survey is what research site the subjects responded on - Skansen, Bratt;ra, Grillstad or Nidelva. Predicted Personal Impact of Flood, is specifically for flooding in the research place and ranges from no impact to significant impact. }
     \label{Kruskal_wallis_test_general}
 \end{table}
 
-All the p-values were larger than the alpha value of 0.05. However, the factor of Concern about Climate  is 0.05630 as highlighted in blue is only just over.  If the alpha value was chosen to be 0.1, as is used in some studies (\cite{hollander_nonparametric_2014}) then this would be enough to reject the null hypothesis that concern about awareness is not dependent upon concern about climate. Another way the hypothesis could have been accepted is due to the high h-value, however as df was under 5 this did not give enough confidence to accept the hypothesis (\cite{minitab_interpret_2022}). The conclusion here is that there is not strong enough evidence that this determination of awareness is dependent upon Concern about Climate.
+All the p-values were larger than the alpha value of 0.05. However, the factor of Concern about Climate  is 0.05630 as highlighted in blue is only just over.  If the alpha value was chosen to be 0.1, as is used in some studies (\cite{hollander_nonparametric_2014}) then this would be enough to reject the null hypothesis that concern about awareness is not dependent upon concern about climate. However the h-value is exceptionally high and the df is 4, meaning that while not as confident as with a p-value rejection, the null hypothesis is still rejected(\cite{minitab_interpret_2022}). The result is that awareness appears dependent upon Concern about climate. 
 
-
+Table 5.7 shows the Kruskal Wallis Test Results for the factors about the subjects community memberships. 
 
 
 \begin{table}[H]
     \centering
     \begin{tabular}{|l|l|l|l|}
     \hline
-         ~ & \textbf{Awareness as predictor} & ~ & ~ \\ \hline
+         ~ & \textbf{Awareness All} & ~ & ~ \\ \hline
         Factor & p value & h value & df \\ \hline
-        Sum & 0.52060 & 4.20260 & 1 \\ \hline
+        Sum of Community Memberships & 0.52060 & 4.20260 & 7 \\ \hline
         Marine worker & na & na & na \\ \hline
         Worker & 0.12310 & 2.37220 & 1 \\ \hline
         Resident & \cellcolor[HTML]{7df9ff} 0.01524 & 5.88900 & 1 \\ \hline
         Student & 0.55590 & 0.34691 & 1 \\ \hline
+        Commuter & 0.44610 & 0.58063 & 1 \\ \hline
         Leisure User Land & 0.68790 & 0.16141 & 1 \\ \hline
         Leisure User water & 0.42120 & 0.64690 & 1 \\ \hline
-        Commuter & 0.44610 & 0.58063 & 1 \\ \hline
         Other & 0.58620 & 0.29627 & 1 \\ \hline
     \end{tabular}
-    \caption{Kruskal Wallis Test Results Community Membership. Other community membership was self reporting: the most common response was tourist, with sailor coming next. Resident is the only value which is highlighted here as it was the only significant result when utilising a alpha value of 0.05}
+    \caption{Kruskal Wallis Test Results Community Membership. Awareness All means that for this determination of awareness all five questions on awareness in the survey were included. Sum of Community Memberships is how many communities did the subjects select in the survey. Marine worker is whether the subject considered themselves a marine worker, this had no responses. Community memberships also included worker, resident, student, commuter, leisure user land, leisure user water and other. The Other community membership was where the subjects self-identified their community : the most common response was tourist, with sailor coming next. }
     \label{Kruskal_wallis_test_general}
 \end{table}
+Resident is the only value which is highlighted in Table 5.7 as it is the only significant result when utilising a alpha value of 0.05. The factor of Resident community membership - resident has a P-value of 0.01524, meaning the differences between the medians are statistically significant. Meaning the null hypothesis of no relationship was rejected and the positive hypothesis that residency is dependent on awareness was accepted. 
 
-An alpha value of 0.05 was chosen and the factor of community membership - resident has a P-value of 0.01524, hence is significant. Meaning the null hypothesis of no relationship was rejected and the positive hypothesis that residency is dependent on awareness was accepted. 
+Table 5.8 shows.....
 
 
 
 
-As the P-value for the variable community membership -residence is greater than the alpha (could assign 0.05 as is common or assign 0.1 which would make it easier to include a few more variables for discussion) The differences between some of the medians are statistically significant.
 \begin{table}[H]
     \centering
     \begin{tabular}{|l|l|l|l|l|l|l|}
