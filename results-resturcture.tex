@@ -341,7 +341,7 @@ During exploratory analysis, only two factors appeared normally distributed. The
     \centering
     \begin{tabular}{|l|l|l|l|}
     \hline
-         \textbf{ Variable } &  \textbf{W-value}& \textbf{ P-Value}& \textbf{Distribution}\\ \hline
+         \textbf{ Variable } &  \textbf{\textit{w} value}& \textbf{\textit{p} value}& \textbf{Distribution}\\ \hline
        Interest Level & 0.89332 & 4.343e-09 & Skewed \\ \hline
          Info Climate Sum  & 0.95721 & 0.0001159 & Skewed \\ \hline
         Flood Impact & 0.87779 & 6.681e-10 & Skewed \\ \hline
@@ -349,8 +349,7 @@ During exploratory analysis, only two factors appeared normally distributed. The
           Awareness B & 0.85758  & 7.263e-11 & Skewed \\ \hline
           Awareness C & 0.85758  & 7.263e-11 & Skewed \\ \hline
      \end{tabular}
-    \caption{Shapiro Test Results.} {The alpha value was assigned 0.05, meaning that if the p-value is below 0.05 then the null hypothesis that this factor is not normally distributed was rejected. This leaves a 5 \% chance of error. Each of these factors p-value is below 0.05 meaning that their distribution was deemed skewed. The W-value is the test statistic which shows how close the data is to normal distribution. If the W-value was between 0.99 and 1 this would indicate normal distribution, none of the variables here are normally distributed.     
-    Interest Level is when subjects self-identified their interest level in SLEs, ranging from professional interest to no interest. Info Climate Sum is the total of how many different sources subjects used to gather information about the climate. Flood impact is what the subjects predicted a flood in the place would impact them ranging from no impact to significant impact. Awareness A is determined from subjects awareness from their ability to answer all five questions in the survey upon awareness. Awareness B uses the questions which included simulated water level images, excluding the questions using only numerical values. Awareness C includes results from questions on current storm surge and current high tide, excluding results of the question of the 20 year storm surge in 2090 and questions using only numerical values. }
+    \caption{Shapiro Test Results.} {The alpha value was assigned 0.05, meaning that if the \textit{p}-value is below 0.05 then the null hypothesis that this factor is not normally distributed was rejected. This leaves a 5 \% chance of error. Each of these factors \textit{p}-value is below 0.05 meaning that their distribution was deemed skewed. The \textit{W}-value is the test statistic which shows how close the data is to normal distribution. If the \textit{w}-value was between 0.99 and 1 this would indicate normal distribution, none of the variables here are normally distributed. "Interest Level" is when subjects self-identified their interest level in SLEs, ranging from professional interest to no interest. "Info Climate Sum" is the total of how many different sources subjects used to gather information about the climate. "Flood impact" is what the subjects predicted a flood in the place would impact them ranging from no impact to significant impact. "Awareness A" is determined from subjects awareness from their ability to answer all five questions in the survey upon awareness. "Awareness B" uses the questions which included simulated water level images, excluding the questions using only numerical values. "Awareness C" includes results from questions on current storm surge and current high tide, excluding results of the question of the 20 year storm surge in 2090 and questions using only numerical values. }
     \label{table:shapiro_test_results}
 \end{table}
 \paragraph{}
@@ -418,7 +417,7 @@ Table \ref{kw_test_info_place} shows the Kruskal Wallis Test Results on the fact
     \begin{tabular}{|l|l|l|l|l|l|l|}
     \hline
        & \textbf{awareness A} & ~ & ~ & \textbf{awareness B} & ~ & ~ \\ \hline
-       Factor &\textit{p}value &\textit{h}value & \textit{df} &\textit{p}value &\textit{h}value & \textit{df} \\ \hline
+       Factor &\textit{p} value &\textit{h} value & \textit{df} &\textit{p} value &\textit{h} value & \textit{df} \\ \hline
         Sum of Sources  & 0.44600 & 6.85110 & 7 & 0.45040 & 6.79650 & 7 \\ \hline
         Personal Observation & 0.22730 & 1.45790 & 1 & 0.36470 & 0.82162 & 1 \\ \hline
         Family & 0.78550 & 0.07406 & 1 & 0.81340 & 0.05572 & 1 \\ \hline
@@ -430,7 +429,7 @@ Table \ref{kw_test_info_place} shows the Kruskal Wallis Test Results on the fact
         Municipality & 0.82590 & 0.04839 & 1 & 0.12790 & 0.57600 & 1 \\ \hline
         \hline
     \end{tabular}
-    \caption{Kruskal Wallis Test Results - Information Sources for Place as Factor}{  "Awareness A" means that for this determination of awareness the three questions on awareness utilising edited photographs were included, which display awareness of the tide and present and future storm surges.  "Awareness B" excludes the future storm surge response and only considers the present storm surge and tide.  The sum of sources is the total number of sources each subject selected as where they gather information about place from. These sources are personal observation, family, friend, newspapers, TV, social media, via membership of organisations and the Municipality. The values highlighted in blue are statistically significant. }
+    \caption{Kruskal Wallis Test Results - Information Sources for Place as Factor}{  "Awareness A" means that for this determination of awareness the three questions on awareness utilising edited photographs were included, which display awareness of the tide and present and future storm surges. "Awareness B" uses the questions which included simulated water level images, excluding the questions using only numerical values. The sum of sources is the total number of sources each subject selected as where they gather information about place from. These sources are personal observation, family, friend, newspapers, TV, social media, via membership of organisations and the Municipality. The values highlighted in blue are statistically significant. }
     \label{kw_test_info_place}
 \end{table}
 
@@ -445,7 +444,7 @@ Table \ref{kwtest_info_climate} shows the Kruskal Wallis Test Results on the fac
     \begin{tabular}{|l|l|l|l|l|l|l|}
     \hline
         & \textbf{awareness A} & ~ & ~ & \textbf{awareness B} & ~ & ~ \\ \hline
-        \textbf{Factor} &\textit{p}value &\textit{h}value & \textit{df} & \textit{p}value &\textit{h}value & \textit{df} \\ \hline
+        \textbf{Factor} &\textit{p} value &\textit{h} value & \textit{df} & \textit{p} value &\textit{h} value & \textit{df} \\ \hline
         Sum of Sources & 0.91220 & 3.32660 & 8 & 0.45218 & 8.12040 & 8 \\ \hline
         Personal Observation & 0.11750 & 2.45020 & 1 & 0.24550 & 1.34870 & 1 \\ \hline
         Family & \cellcolor[HTML]{7df9ff} 0.00481 & 0.94470 & 1 & 0.56970 & 0.32313 & 1 \\ \hline
@@ -457,7 +456,8 @@ Table \ref{kwtest_info_climate} shows the Kruskal Wallis Test Results on the fac
         Peer Reviewed Publications  & 0.88040 & 0.02650 & 1 & 0.12390 & 2.36760 & 1 \\ \hline
         Formal Education & 0.64850 & 0.20779 & 1 & \cellcolor[HTML]{7df9ff} 0.02438 & 5.06770 & 1 \\ \hline
     \end{tabular}
-    \caption{Kruskal Wallis Test Results - Information Sources for Climate as Factor}{ "Awareness A" means that for this determination of awareness the three questions on awareness utilising edited photographs were included, which display awareness of the tide and present and future storm surges.  "Awareness B" excludes the future storm surge response and only considers the present storm surge and tide.  The sum of sources is the total number of sources each subject selected as from where they gather information about changes to the climate. These sources are personal observation, family, friend, newspapers, TV, social media, via membership of organisations, peer reviewed publications and formal education. The values highlighted in blue are statistically significant. }
+    \caption{Kruskal Wallis Test Results - Information Sources for Climate as Factor}{ "Awareness A" means that for this determination of awareness the three questions on awareness utilising edited photographs were included, which display awareness of the tide and present and future storm surges.  
+    "Awareness B" uses the questions which included simulated water level images, excluding the questions using only numerical values. The sum of sources is the total number of sources each subject selected as from where they gather information about changes to the climate. These sources are personal observation, family, friend, newspapers, TV, social media, via membership of organisations, peer reviewed publications and formal education. The values highlighted in blue are statistically significant. }
     \label{kwtest_info_climate}
 \end{table}
 
@@ -474,7 +474,7 @@ Table \ref{kwtest_place} shows the Kruskal Wallis Test Results on the factors of
 
    
  ~ & \textbf{awareness A} & ~ & \textbf{awareness B} & ~ & ~ &\\\hline
-        \textbf{Factor} &\textit{p} value &\textit{h} value & \textit{df} &\textit{p}value &\textit{h}value & \textit{df}\\ \hline
+        \textbf{Factor} &\textit{p} value &\textit{h} value & \textit{df} &\textit{p} value &\textit{h} value & \textit{df}\\ \hline
          Brattøra & 0.1044  & 2.6364 & 1 & 0.771 & 0.084739 &1\\ \hline
         Grillstad & 0.1815 & 1.7855 & 1 & 0.1565 & 2.008 & 1 \\ \hline
        Skansen & 0.09349 & 2.8133 & 1 & 0.05527 & 3.6738 & 1\\ \hline
